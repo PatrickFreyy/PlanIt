@@ -22,9 +22,7 @@
     - [Online User Documentation and Help System Requirements](#37-on-line-user-documentation-and-help-system-requirements)
     - [Purchased Components](#purchased-components)
     - [Interfaces](#39-interfaces)
-    - [Licensing Requirements](#310-licensing-requirements)
     - [Legal, Copyright And Other Notices](#311-legal-copyright-and-other-notices)
-    - [Applicable Standards](#312-applicable-standards)
 - [Supporting Information](#4-supporting-information)
 
 ## 1. Introduction
