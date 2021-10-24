@@ -86,12 +86,12 @@ Project Management: YouTrack, GitHub, Wordpress
 ### 3.1 Functionality
 This section will explain the different use cases, you could see in the Use Case Diagram, and their functionality.  
 Until December we plan to implement:
-Markup : * Calender with different views
-          * Appointments
-	  * Add/remove
-	  * Warning, if there is no break
-	  * Allow to add description to the appointment
-	  * Implement categories
+* Calender with different views
+* Appointments
+* Add/remove
+* Warning, if there is no break
+* Allow to add description to the appointment
+* Implement categories
 	  
 •	Calender with different views
 •	Appointments 
