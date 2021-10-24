@@ -92,23 +92,17 @@ Until December we plan to implement:
 * Warning, if there is no break
 * Allow to add description to the appointment
 * Implement categories
-	  
-•	Calender with different views
-•	Appointments 
-o	Add/remove
-o	Warning, if there is no break
-o	Allow to add description to the appointment
-•	Implement categories
+
 
 
 Until June, we want to implement:
-•	Learn planning
-o	Input, when exam 
-o	Input time between learn periods
-o	Add time, when user want to learn
-o	Allow manual change
-o	Has to find free slots to learn
-o	Breaks between different appointments
+* Learn planning
+* Exam date input
+* Time between learn periods input
+* Add time when user want to learn
+* Allow manual changes
+* Find free slots to learn
+* Breaks between different appointements
 
 ### 3.2 Usability
 #### 3.2.1 Intuitive User Guidance
@@ -123,7 +117,7 @@ We implement a FAQ to help the user on using the web-application.
 The website servers should always be available so the user has always access to his schedule.
 
 ### 3.4 Perfomance
-Due to small size of the application, we don't focus performance.
+Due to small size of the application, we don't focus on performance.
 ### 3.5 Supportability
 
 #### 3.5.1 Coding Standards
@@ -133,7 +127,7 @@ We are going to write the code by using all of the most common clean code standa
 Our focus is to build a modern application with modern technologies.
 
 ### 3.7 On-line User Documentation and Help System Requirements
-We focus on building an intuitive modern-looking web-application to allow users to use our website without problems. We also implement an "FAQ" that contains instructions on how to use the application, features and leave our contacts for possible questions.x
+We focus on building an intuitive modern-looking web-application to allow users to use our website without problems. We also implement an "FAQ" that contains instructions on how to use the application, features and leave our contacts for possible questions.
 
 ### 3.8 Purchased Components
 We don't have any purchased components yet. If there will be purchased components in the future we will list them here.
@@ -147,7 +141,7 @@ The users could enter their appointments on a schedule, which is shown on the we
 Controller parses data to persistence interface where the user could make their input. 
 
 ### 3.10 Legal, Copyright, and Other Notices
-The logo is licensed to the PanIt Team and is only allowed to use for the application. We do not take responsibility  for any incorrect data or errors in the application.
+The logo is licensed to the PlanIt Team and is only allowed to use for the application. We do not take responsibility for any incorrect data or errors in the application.
 
 ## 4. Supporting Information
 For more information you can contact us through our [blog](https://planit2021se.wordpress.com/). 
