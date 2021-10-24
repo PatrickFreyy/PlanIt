@@ -47,8 +47,8 @@ User can insert an appointment into the calendar, to gain an overview of incomin
 | Abbrevation | Explanation                            |
 | ----------- | -------------------------------------- |
 | SRS         | Software Requirements Specification    |
-| UCD         | overall Use Case Diagram               |
-| FAQ         | Frequently asked Questions             |
+| UCD         | Use Case Diagram                       |
+| FAQ         | Frequently Asked Questions             |
 
 ### 1.4 References
 
@@ -72,19 +72,13 @@ PlanIt will be a tool like a calendar. The main difference between our project a
 ### 2.3 Technology Stack
 Technologies we use:
 
-Backend:
--Java
+Backend: Java
 
-Frontend:
--JavaScript [Framework missing]
+Frontend: JavaScript [Framework missing]
 
-IDE:
--Visual Studio Code
+IDE: Visual Studio Code
 
-Project Management:
--YouTrack
--GitHub
--Wordpress
+Project Management: YouTrack, GitHub, Wordpress
 
 
 ## 3. Specific Requirements
@@ -92,6 +86,13 @@ Project Management:
 ### 3.1 Functionality
 This section will explain the different use cases, you could see in the Use Case Diagram, and their functionality.  
 Until December we plan to implement:
+Markup : * Calender with different views
+          * Appointments
+	  * Add/remove
+	  * Warning, if there is no break
+	  * Allow to add description to the appointment
+	  * Implement categories
+	  
 •	Calender with different views
 •	Appointments 
 o	Add/remove
