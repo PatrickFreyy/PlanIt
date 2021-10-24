@@ -67,7 +67,7 @@ The following chapter provides an overview of this project with vision and Overa
 PlanIt will be a tool like a calendar. The main difference between our project and other usual calendar will be an exam planer. Not only will users set up new appointments and have a plan for the day, but they will also be able to plan their exam preparation. By entering the date and number and length of lectures, PlanIt suggests a time schedule for the exam preparation.
 
 ### 2.2 Use Case Diagram
-noch rein tun 
+![OUCD](./UseCaseDiagram.png) 
 
 ### 2.3 Technology Stack
 Technologies we use:
@@ -153,4 +153,4 @@ For more information you can contact us through our [blog](https://planit2021se.
 
 
 <!-- Picture-Link definitions: -->
-<!--[OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"-->
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/UseCaseDiagram.png "Overall Use Case Diagram"
