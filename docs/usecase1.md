@@ -43,4 +43,7 @@ While using the application the user created at least one event. The storage con
 
 * create event
 * changing views
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/acivitydiagramm%20usedcase1.drawio.png "Activity diagramm"
+
+
+<!-- Picture-Link definitions: -->
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/UseCaseDiagram.png "Overall Use Case Diagram"
