@@ -13,7 +13,7 @@ The user wants to get an overview of his schedule for that he opens the ui of th
 
 #### 2.1.1 Activity Diagram
 
-![OUCD](./acivitydiagramm usedcase1.drawio.png)
+![OUCD] (./acivitydiagramm usedcase1.drawio.png)
 
 ### 2.2 Alternative Flows
   1. opens empty calendar
@@ -43,4 +43,4 @@ While using the application the user created at least one event. The storage con
 
 * create event
 * changing views
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/acivitydiagramm%20usedcase1.drawio.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/acivitydiagramm%20usedcase1.drawio.png "Activity diagramm"
