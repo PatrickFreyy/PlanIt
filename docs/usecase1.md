@@ -20,7 +20,7 @@ The user wants to get an overview of his schedule for that he opens the ui of th
 
 ## 3 Special Requirements
 
-The application opnes independent from storage, so empty storage doesn't cause the appliocation to crash.
+The application opens independent from storage, so empty storage doesn't cause the appliocation to crash.
 
 ## 4 Preconditions
 
