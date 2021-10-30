@@ -88,21 +88,21 @@ This section will explain the different use cases, you could see in the Use Case
 Until December we plan to implement:
 * Calender with different views
 * Appointments
-* Add/remove
-* Warning, if there is no break
-* Allow to add description to the appointment
+    * Add/remove
+    * Warning, if there is no break
+    * Allow to add description to the appointment
 * Implement categories
 
 
 
 Until June, we want to implement:
 * Learn planning
-* Exam date input
-* Time between learn periods input
-* Add time when user want to learn
-* Allow manual changes
-* Find free slots to learn
-* Breaks between different appointements
+    * Exam date input
+    * Time between learn periods input
+    * Add time when user want to learn
+    * Allow manual changes
+    * Find free slots to learn
+    * Breaks between different appointements
 
 ### 3.2 Usability
 #### 3.2.1 Intuitive User Guidance
