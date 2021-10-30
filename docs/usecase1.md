@@ -45,4 +45,4 @@ While using the application the user created at least one event. The storage con
 
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/acivitydiagramm usedcase1.drawio.png "Overall Use Case Diagram"
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1.png 
