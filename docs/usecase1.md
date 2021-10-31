@@ -13,10 +13,10 @@ The user wants to get an overview of his schedule for that he opens the ui of th
 
 #### 2.1.1 Activity Diagram
 
-![OUCD] 
+![OUCD] (./usecase1_1.png)
 
 ### 2.1.2 Mock-up
-![OUCD]
+![OUCD] (./create.png)
 ### 2.2 Alternative Flows
   1. opens empty calendar
 
