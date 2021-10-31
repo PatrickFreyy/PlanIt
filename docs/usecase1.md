@@ -20,7 +20,7 @@ The user wants to get an overview of his schedule for that he opens the ui of th
 
 ## 3 Special Requirements
 
-The application opnes independent from storage, so empty storage doesn't cause the appliocation to crash.
+The application opens independent from storage, so empty storage doesn't cause the appliocation to crash.
 
 ## 4 Preconditions
 
@@ -45,4 +45,4 @@ While using the application the user created at least one event. The storage con
 
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/acivitydiagramm usedcase1.drawio.png "Overall Use Case Diagram"
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1.png 
