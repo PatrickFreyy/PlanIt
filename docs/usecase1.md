@@ -1,35 +1,29 @@
 # Use Case: Read Calendar
 ## 1 Brief Description
 
-The user wants to get an overview of his schedule for that he opens the ui of the calendar application.
+The gets an overview of his schedule when oppening the application.
 
 ## 2 Flow of Events
 
 ### 2.1 Basic Flow
 
-  1. opens calendar
-  2. gets appointments from the local storage
-  3. scroll throw the calendar
-
+  1. User opens
+  2. Clients gets appointments from the local storage and displays them
+  3. User views schedule and can scroll thrpugh time table
+  
 #### 2.1.1 Activity Diagram
 
-![OUCD]<!-- (./usecase1_1.png)-->
-
-### 2.1.2 Mock-up
-![OUCA] <!--(./create.png)-->
+![OUCD] 
 ### 2.2 Alternative Flows
-  1. opens empty calendar
-
+  1. User opens empty calendar if client can't find any schedule file.
 
 ## 3 Special Requirements
 
-The application opens independent from storage, so empty storage doesn't cause the appliocation to crash.
+The application opens independently from storage, so an empty storage won't cause the appliocation to crash.
 
 ## 4 Preconditions
 
-### 4.1 Login
-
-The application must be installed.
+(n/a)
 
 ## 5 Postconditions
 
@@ -48,5 +42,4 @@ While using the application the user created at least one event. The storage con
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1_1.png
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/create.png
 
