@@ -34,7 +34,7 @@ Application requires rights to write into local storage, otherwise created event
 
 Local storage now contains a new data. If it doesn’t, the newly created event wasn’t written into storage properly and can’t be loaded again later.
 
-### 5.2 Ui refreshes
+### 5.2 UI refreshes
 
 The newly created event is shown immediately. This way, the user can see, that the creation-process completed and didn’t fail. For that to happen, the UI needs to load recently added data.
 
