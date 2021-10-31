@@ -1,23 +1,24 @@
 # Use Case: Create Event
 ## 1 Brief Description
 
-The user can create an event by using the UI. This event can be a private appointment or a public event, its main purpose is to block a time span in the calendar.
+The user can create an event by using the UI.
 
 ## 2 Flow of Events
 
 ### 2.1 Basic Flow
 
-  1. opens calendar
-  2. presses a button to initialize creation process
-  3. types in parameters like time occupation used to create event object
-  4. new event gets saved in local storage
+  1. User opens calendar
+  2. User presses a button to initialize creation process
+  3. Client opens window for event creation
+  4. User fills out empty fiels of created window
+  5. Client saves new event in local storage and closes window
 
 #### 2.1.1 Activity Diagram
 
 ![OUCD] 
 ### 2.2 Alternative Flows
-  There is no alternative flow. The only alternative is a different usecase.
-
+  
+  (n/a)
 
 ## 3 Special Requirements
 
@@ -25,9 +26,7 @@ Application requires rights to write into local storage, otherwise created event
 
 ## 4 Preconditions
 
-### 4.1 Login
-
-The application must be opened.
+(n7a)
 
 ## 5 Postconditions
 
