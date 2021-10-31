@@ -1,7 +1,7 @@
 # Use Case: Read Calendar
 ## 1 Brief Description
 
-The gets an overview of his schedule when oppening the application.
+The user gets an overview of his schedule when starting the application.
 
 ## 2 Flow of Events
 
