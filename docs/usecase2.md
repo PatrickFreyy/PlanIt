@@ -16,6 +16,11 @@ The user can create an event by using the UI.
 #### 2.1.1 Activity Diagram
 
 ![OUCD] 
+
+
+#### 2.1.2 Mock-up 
+
+![OUCA]
 ### 2.2 Alternative Flows
   
   (n/a)
@@ -55,3 +60,4 @@ If an event doesn’t get cancelled, but set to another time, one option is to d
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase2.drawio.png 
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/create.png
