@@ -43,6 +43,5 @@ While using the application the user created at least one event. The storage con
 * create event
 * changing views
 
-
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1.png 
