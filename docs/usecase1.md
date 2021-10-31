@@ -14,6 +14,11 @@ The user gets an overview of his schedule when starting the application.
 #### 2.1.1 Activity Diagram
 
 ![OUCD] 
+
+#### 2.1.2 Mock-up 
+
+![OUCA]
+
 ### 2.2 Alternative Flows
   1. User opens empty calendar if client can't find any schedule file.
 
@@ -42,4 +47,4 @@ While using the application the user created at least one event. The storage con
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1_1.png
-
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/create.png
