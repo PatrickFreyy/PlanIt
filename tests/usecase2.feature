@@ -11,8 +11,7 @@ Scenario: succesfully created
     And I can see the appointment in the schedule
 
 Scenario: created not succesfully
-    Given feature: starting the application
-    And press the button to create an event
+    Given I press the button to create an event
     Then I see the window where I can insert the details of the event
     When I insert some details
     And I press the button create
