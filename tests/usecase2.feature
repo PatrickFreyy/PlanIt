@@ -16,4 +16,4 @@ Scenario: created not succesfully
     When I insert some details
     And I press the button create
     Then I get a warning, that I have to fill all fields
-    And the appointment isn't saved in the local storage
+    And the appointment is not saved in the local storage

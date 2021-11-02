@@ -5,7 +5,7 @@ I want to get an overview of my schedule when starting the application.
 Scenario: no network connection
     Given I have no network connection
     When I start the application
-    Then I can't load the page 
+    Then I can not load the page 
     And I get an error
 
 Scenario: saved appointments in storage
