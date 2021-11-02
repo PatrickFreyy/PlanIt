@@ -1,7 +1,7 @@
 Feature: create event
 As a User 
 I want to create an event by using the UI.
-    Scenario: succesfully created
+Scenario: succesfully created
     Given feature: starting the application
     And press the button to create an event
     Then I see the window where I can insert the details of the event
@@ -10,7 +10,7 @@ I want to create an event by using the UI.
     Then The appointment is saved in the local storage 
     And I can see the appointment in the schedule
 
-    Scenario: created not succesfully
+Scenario: created not succesfully
     Given feature: starting the application
     And press the button to create an event
     Then I see the window where I can insert the details of the event
