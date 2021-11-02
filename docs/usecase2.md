@@ -23,7 +23,7 @@ The user can create an event by using the UI.
 ![OUCA]
 ### 2.2 Alternative Flows
   
-  (n/a)
+The user gets a warning, that he has to fill all fields. The client don't saves the appointment.
 
 ## 3 Special Requirements
 
@@ -31,7 +31,7 @@ Application requires rights to write into local storage, otherwise created event
 
 ## 4 Preconditions
 
-(n7a)
+The application is started, the usecase "read calendar" 
 
 ## 5 Postconditions
 
