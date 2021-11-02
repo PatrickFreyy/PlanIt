@@ -47,4 +47,4 @@ While using the application the user created at least one event. The storage con
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1_1.png
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/create.png
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/view.png
