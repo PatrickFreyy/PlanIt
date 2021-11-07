@@ -63,6 +63,8 @@ Feature: Create event-creation window
 #### 2.1.2 Mock-up 
 
 ![OUCA]
+
+The checkbox "flexible" is for the feature that the application searchs for time to learn for exams. If the appointment is flexible, the application maybe moves it to an other time to insert time to learn.
 ### 2.2 Alternative Flows
   
 The user gets a warning, that he has to fill all fields. The client don't saves the appointment.
