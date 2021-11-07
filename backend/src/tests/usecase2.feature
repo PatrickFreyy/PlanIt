@@ -11,8 +11,8 @@ Feature: Create event-creation window
     Scenario: Creation not succesful
         Given I started the application
         And I lost the network connection
-        When I press the button to crate an event
+        When I press the button to create an event
         Then I get an error message 
-        Then I see my schedule
+        And I see my schedule
 
    
