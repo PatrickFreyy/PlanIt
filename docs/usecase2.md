@@ -17,6 +17,8 @@ The user can create an event by using the UI.
 
 ![OUCD] 
 
+And here is a screenshot of the `.feature` file for this use case:
+![OUCB]
 
 #### 2.1.2 Mock-up 
 
@@ -61,3 +63,4 @@ If an event doesn’t get cancelled, but set to another time, one option is to d
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase2.drawio.png 
 [OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/create.png
+[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/feature2.png
