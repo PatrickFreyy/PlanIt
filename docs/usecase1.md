@@ -41,7 +41,7 @@ Feature: Start
         When I start the application 
         Then I see the application with an empty schedule
 ```
-![OUCB]
+<!-- ![OUCB] -->
 
 #### 2.1.2 Mock-up 
 

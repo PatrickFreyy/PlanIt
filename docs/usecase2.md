@@ -17,8 +17,48 @@ The user can create an event by using the UI.
 
 ![OUCD] 
 
-And here is a screenshot of the `.feature` file for this use case:
-![OUCB]
+And here is the code of the  `.feature` file for this use case:
+
+```feature 
+Feature: Create event-creation window
+
+    As a User 
+    I want to create an event-creation window by using the UI.
+
+    Scenario: Creation succesful
+        Given I started the application
+        When I press the button to create an event
+        Then I see the window where I can insert the details of the event
+    
+    Scenario: Creation not succesful
+        Given I started the application
+        And I lost the network connection
+        When I press the button to create an event
+        Then I get an error message 
+        And I see my schedule
+
+ Feature: Save new appointment
+ 
+     As a User
+     I want to save my created appointment.
+
+     Background: 
+        Given I started the application
+        And I see the event-creation window
+
+     Scenario: all fields correct
+        When I fill out all fields correctly
+        And I press the save-button
+        Then the event will be saved in my local storage
+        And I am able to see the new created event in the schedule
+
+    Scenario: field missing or incorrect
+        When I fill out a field incorrectly or not at all
+        And I press the save-button 
+        Then I will get an error-message
+        And I will see the event-creation window        
+```
+<!-- ![OUCB] -->
 
 #### 2.1.2 Mock-up 
 
