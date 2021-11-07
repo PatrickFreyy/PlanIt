@@ -1,19 +1,18 @@
-Feature: create event
-As a User 
-I want to create an event by using the UI.
-Scenario: succesfully created
-    Given feature: starting the application
-    And press the button to create an event
-    Then I see the window where I can insert the details of the event
-    When I insert all details
-    And I press the button create
-    Then The appointment is saved in the local storage 
-    And I can see the appointment in the schedule
+Feature: Create event-creation window
 
-Scenario: created not succesfully
-    Given I press the button to create an event
-    Then I see the window where I can insert the details of the event
-    When I insert some details
-    And I press the button create
-    Then I get a warning, that I have to fill all fields
-    And the appointment is not saved in the local storage
+    As a User 
+    I want to create an event-creation window by using the UI.
+
+    Scenario: Creation succesful
+        Given I started the application
+        When I press the button to create an event
+        Then I see the window where I can insert the details of the event
+    
+    Scenario: Creation not succesful
+        Given I started the application
+        And I lost the network connection
+        When I press the button to crate an event
+        Then I get an error message 
+        Then I see my schedule
+
+   
