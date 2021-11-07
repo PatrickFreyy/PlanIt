@@ -37,7 +37,7 @@ The application is started, the usecase "read calendar"
 
 ### 5.1 New event saved
 
-Local storage now contains a new data. If it doesn’t, the newly created event wasn’t written into storage properly and can’t be loaded again later.
+Local storage now contains a new dataset. If it doesn’t, the newly created event wasn’t written into storage properly and can’t be loaded again later.
 
 ### 5.2 UI refreshes
 
