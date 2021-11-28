@@ -24,7 +24,7 @@ public class Schedule {
 
     void createExam (int app_ID, String description, Category category, int priority,
                      Color color, Date startDate, Date endDate, String module, int studyWorkload) {
-        new Exam(app_ID, description, category, priority, color, startDate, endDate, module, studyWorkload)
+        new Exam(app_ID, description, category, priority, color, startDate, endDate, module, studyWorkload);
     }
 
     // ---------------- getter and setter section ---------------
