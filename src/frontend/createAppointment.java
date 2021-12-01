@@ -11,19 +11,25 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.GridLayout;
+import java.util.HashMap;
+import java.util.Map;
 import java.awt.BorderLayout;
+import java.awt.event.ActionListener;
 
 public class createAppointment extends JFrame {
 
     private JPanel structure = new JPanel();
+    // two seperate Panel, left the text on the right the textfields 
     private JPanel left = new JPanel();
     private JPanel right = new JPanel();
     private JCheckBox flexible = new JCheckBox("flexible?");
     private JButton createbtn = new JButton("create");
 
-    // private ArrayList textfields = new ArrayList(JTextField);
+    // to save the textfields
+    private Map textfields = new HashMap<Integer,JTextField>();
 
     public createAppointment(){
+        // structure of the frame
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Create Event");
         this.setSize(300, 300);
@@ -41,11 +47,15 @@ public class createAppointment extends JFrame {
         this.left.add(this.flexible);
         this.structure.add(this.left);
         // this.add(new  JLabel("Test"));
+        // initialise textfields and add to frame 
         for (int i = 0; i < 6; i++){
-            JTextField text = new JTextField(10);
+            JTextField text = new JTextField(5);
             this.right.add(text);
-            // this.textfields.put(text);
+            this.textfields.put(i,text);
         }
+        // this.createbtn.addActionListener(new ActionListener(
+        //     this.insertEvent()
+        // ));
         this.right.add(createbtn);
         this.structure.add(this.right);
         this.add(structure, BorderLayout.CENTER);
@@ -53,11 +63,14 @@ public class createAppointment extends JFrame {
     }
 
     public static void main(String[] args) {
-        System.out.println("Test");
         new createAppointment();
 
     }
 
-    
+    public Object insertEvent(){
+        return new Object(
+            // startTime
+        );
+    }
     
 }
