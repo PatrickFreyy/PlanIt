@@ -10,15 +10,13 @@
 - [Use-Case View](#4-use-case-view)
 - [Logical View](#5-logical-view)
     - [Overview](#51-overview)
-    - [Architecturally Significant Design Packages](#52-architecturally-significant-design-packages)
 - [Process View](#6-process-view)
 - [Deployment View](#7-deployment-view)
 - [Implementation View](#8-implementation-view)
-    - [Overview](#81-overview)
-    - [Layers](#82-layers)
 - [Data View](#9-data-view)
 - [Size and Performance](#10-size-and-performance)
 - [Quality/Metrics](#11-qualitymetrics)
+- [Patterns](#12-patterns)
 
 ## 1. Introduction
 
