@@ -14,6 +14,7 @@ import java.awt.GridLayout;
 import java.util.HashMap;
 import java.util.Map;
 import java.awt.BorderLayout;
+import java.awt.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class createAppointment extends JFrame {
@@ -53,8 +54,12 @@ public class createAppointment extends JFrame {
             this.right.add(text);
             this.textfields.put(i,text);
         }
-        // this.createbtn.addActionListener(new ActionListener(
-        //     this.insertEvent()
+        this.createbtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+                this.insertEvent();
+            }});
         // ));
         this.right.add(createbtn);
         this.structure.add(this.right);
@@ -68,9 +73,19 @@ public class createAppointment extends JFrame {
     }
 
     public Object insertEvent(){
-        return new Object(
-            // startTime
-        );
+        System.out.println("test");
+        return null; // new Appointment(1, this.textfields.get(1).value, this.textfields.get(2).value, this.textfields.get(3).value, this.textfields.get(4).toString(), startDate, endDate)
     }
-    
+    // private class Appointment{
+    //     private Appointment (int app_ID, String description, Category category, int priority,
+    //         Color color, Date startDate, Date endDate) {
+    //               setApp_ID(app_ID);
+    //               setDescription(description);
+    //               setCategory(category);
+    //               setPriority(priority);
+    //               setColor(color);
+    //               setstartDate(startDate);
+    //               setendDate(endDate);
+    //         }
+    //     }
 }
