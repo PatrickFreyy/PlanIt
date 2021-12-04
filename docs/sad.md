@@ -94,6 +94,6 @@ N/A
 <!-- Picture-Link definitions: -->
 
 [QUDC]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/mvc.png
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/UseCaseDiagram.png 
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/UseCaseDiagram.jpg
 [OUBD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/class-diagram.jpg
 [OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/MVC.jpg
