@@ -60,7 +60,7 @@ This is our overall use-case diagram:
 
 We split our architecture according to the MVC architecture as follows:
 
-![OUBD]
+![OUCA]
 
 ## 6. Process View
 
@@ -72,7 +72,7 @@ N/A
 
 ## 8. Implementation View
 
-our implemetation view is the same see in 5.1 overview
+![OUBD]
 
 ## 9. Data View
 
@@ -96,3 +96,4 @@ N/A
 [QUDC]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/mvc.png
 [OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/UseCaseDiagram.png 
 [OUBD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/class-diagram.jpg
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/MVC.jpg
