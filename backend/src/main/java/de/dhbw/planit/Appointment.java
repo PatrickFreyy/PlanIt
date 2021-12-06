@@ -1,8 +1,9 @@
 package de.dhbw.planit;
 
 import java.util.Date;
+import java.io.Serializable;
 
-public class Appointment {
+public class Appointment implements Serializable {
       int app_ID;
       String description;
       Category category;
@@ -22,8 +23,9 @@ public class Appointment {
                   setendDate(endDate);
             }
 
+      public String toString() {
+            return null;            }
       // ---------------- getter and setter section ---------------
-
       int getApp_ID() {
             return app_ID;
       }
