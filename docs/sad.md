@@ -40,7 +40,7 @@ implementation and data views.
 
 Our project PlanIt uses the model-view-controler(MVC) structure as follows:
 
-![OUDC] 
+![QUDC] 
 
 ## 3. Architectural Goals And Constraints
 
