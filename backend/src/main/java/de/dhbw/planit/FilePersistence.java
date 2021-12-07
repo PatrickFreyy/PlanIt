@@ -77,7 +77,32 @@ public class FilePersistence implements Persistence{
 
     @Override
     public void deleteAppointment(int app_ID) {
-        // TODO Auto-generated method stub
+        if (appointmentFile.exists()) {
+			Appointment[] oldAppArr = loadAppointments();
+			ArrayList<Appointment> updatedAppList = new ArrayList<Appointment>();
+			
+			for (int i = 0; i < oldAppArr.length; i++) {
+				if (oldAppArr[i].getApp_ID() != app_ID) {
+					updatedAppList.add(oldAppArr[i]);
+				}
+			}
+						
+			Appointment[] newStudentsArr = new Appointment[updatedAppList.size()];
+			newStudentsArr = updatedAppList.toArray(newStudentsArr);
+			
+			try {
+			    FileOutputStream fos = new FileOutputStream(appointmentFile);
+			    ObjectOutputStream oos = new ObjectOutputStream(fos);
+			    oos.writeObject(newStudentsArr);
+			    oos.close();
+			}
+			catch (FileNotFoundException e) {
+			    e.printStackTrace();
+			}
+			catch (IOException e) {
+			    e.printStackTrace();
+			}
+		}
     }
 
     @Override
