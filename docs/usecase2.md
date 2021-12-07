@@ -17,7 +17,7 @@ The user can create an event by using the UI.
 
 ![OUCD] 
 
-And here is the code of the  `.feature` file for this use case:
+And here is the code of the  `.feature` file for this use case and [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase2.feature) could be read the actual one:
 
 ```feature 
 Feature: Create event-creation window
