@@ -24,6 +24,7 @@ public class createAppointment extends JFrame {
 	private JPanel right = new JPanel();
 	private JCheckBox flexible = new JCheckBox("flexible?");
 	private JButton createbtn = new JButton("create");
+	private Event event  = new Event();
 
 	// to save the textfields
 	private Map textfields = new HashMap<Integer, JTextField>();
@@ -54,19 +55,7 @@ public class createAppointment extends JFrame {
 			this.right.add(text);
 			this.textfields.put(i, text);
 		}
-		this.createbtn.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				parsAppointmentName();
-				parsStartDate();
-				parsStartTime();
-				parsEndDate();
-				parsEndTime();
-				parsCategory();
-				parsFlexible();
-			}
-		});
+		
 		this.right.add(createbtn);
 		this.structure.add(this.right);
 		this.add(structure, BorderLayout.CENTER);
@@ -78,37 +67,37 @@ public class createAppointment extends JFrame {
 
 	}
 //  pars methods 
-	public String parsAppointmentName() {
+	private String parsAppointmentName() {
 		JTextField field = (JTextField) this.textfields.get(0);
 		return field.getText();
 	}
 	
-	public String parsStartDate() {
+	private String parsStartDate() {
 		JTextField field = (JTextField) this.textfields.get(1);
 		return field.getText();
 	}
 	
-	public String parsStartTime() {
+	private String parsStartTime() {
 		JTextField field = (JTextField) this.textfields.get(2);
 		return field.getText();
 	}
 	
-	public String parsEndDate() {
+	private String parsEndDate() {
 		JTextField field = (JTextField) this.textfields.get(3);
 		return field.getText();
 	}
 	
-	public String parsEndTime() {
+	private String parsEndTime() {
 		JTextField field = (JTextField) this.textfields.get(4);
 		return field.getText();
 	}
 	
-	public String parsCategory() {
+	private String parsCategory() {
 		JTextField field = (JTextField) this.textfields.get(5);
 		return field.getText();
 	}
 	
-	public String parsFlexible() {
+	private String parsFlexible() {
 		String help;
 		if (flexible.isSelected()) {
 			help = "true";
@@ -116,5 +105,20 @@ public class createAppointment extends JFrame {
 			help = "false";
 		}
 		return help;
+	}
+
+	public String[] getStrings() {
+		String[] strings = new String[7];
+		strings[0] = parsAppointmentName();
+		strings[1] = parsStartDate();
+		strings[2] = parsStartTime();
+		strings[3] = parsEndDate();
+		strings[4] = parsEndTime();
+		strings[5] = parsCategory();
+		strings[6] = parsFlexible();
+ 	}
+
+	public void declareEvent(){
+	this.createbtn.addActionListener(action -> event.createEvent(getStrings()));
 	}
 }
