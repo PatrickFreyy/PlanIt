@@ -1,4 +1,4 @@
-package frontend;
+package src.main.java.de.dhbw.planit.frontend;
 
 import javax.swing.JButton;
 
@@ -10,21 +10,23 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import src.main.java.de.dhbw.planit.backend.UIView;
+
 import java.awt.GridLayout;
 import java.util.HashMap;
 import java.util.Map;
 import java.awt.BorderLayout;
-import java.awt.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class createAppointment extends JFrame {
+public class createAppointment extends JFrame implements UIView{
     private JPanel structure = new JPanel();
 	// two seperate Panel, left the text on the right the textfields
 	private JPanel left = new JPanel();
 	private JPanel right = new JPanel();
 	private JCheckBox flexible = new JCheckBox("flexible?");
 	private JButton createbtn = new JButton("create");
-	private Event event  = new Event();
+	private Event event;
 
 	// to save the textfields
 	private Map textfields = new HashMap<Integer, JTextField>();
@@ -116,9 +118,13 @@ public class createAppointment extends JFrame {
 		strings[4] = parsEndTime();
 		strings[5] = parsCategory();
 		strings[6] = parsFlexible();
+
+		return strings;
  	}
 
-	public void declareEvent(){
-	this.createbtn.addActionListener(action -> event.createEvent(getStrings()));
+	@Override
+	public void declareEvent(Event event){
+		this.event = event;
+		this.createbtn.addActionListener(action -> event.createEvent(getStrings()));
 	}
 }
