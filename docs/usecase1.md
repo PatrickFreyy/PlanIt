@@ -15,7 +15,7 @@ The user gets an overview of his schedule when starting the application.
 
 ![OUCD] 
 
-And here is the code of the  `.feature` file for this use case:
+And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase1.feature):
 
 ```feature 
 Feature: Start
