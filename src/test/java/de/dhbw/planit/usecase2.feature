@@ -6,13 +6,12 @@ Feature: Create event-creation window
     Scenario: Creation succesful
         Given I started the application
         When I press the button to create an event
-        Then I see the window where I can insert the details of the event
+        Then I see a window which allows me to create an appointment
     
     Scenario: Creation not succesful
         Given I started the application
-        And I lost the network connection
+        And I already opened an event-creation window
         When I press the button to create an event
-        Then I get an error message 
-        And I see my schedule
+        Then I see an error message telling me an event-creation window is already open
 
    
