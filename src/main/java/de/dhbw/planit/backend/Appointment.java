@@ -1,4 +1,4 @@
-package de.dhbw.planit;
+package src.main.java.de.dhbw.planit.backend;
 
 import java.util.Date;
 import java.io.Serializable;

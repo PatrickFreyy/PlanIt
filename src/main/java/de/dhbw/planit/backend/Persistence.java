@@ -1,4 +1,4 @@
-package de.dhbw.planit;
+package src.main.java.de.dhbw.planit.backend;
 
 public interface Persistence {
       public void saveAppointment(Appointment appointment);

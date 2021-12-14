@@ -1,10 +1,7 @@
-package de.dhbw.planit;
+package src.main.java.de.dhbw.planit.backend;
+
+import src.main.java.de.dhbw.planit.frontend.Event;
 
 public interface UIView {
-      public void showSchedule();
-      public void showAppointments();
-      public void showAppontmentCreationDialog();
-      public void saveAppointment();
-      public void cancelCreationProcess();
-      public void changeDisplayedTimeFrame();
+      void declareEvent(Event event);
 }

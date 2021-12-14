@@ -1,11 +1,9 @@
 package src.main.java.de.dhbw.planit.backend;
 
-import java.sql.Date;
-
 import src.main.java.de.dhbw.planit.frontend.createAppointment;
 
-public final class App {
-    private App() {
+public final class StartPlanIt {
+    private StartPlanIt() {
     }
 
     /**
@@ -14,11 +12,12 @@ public final class App {
      */
     public static void main(String[] args) {
 
-        
         FilePersistence fp = new FilePersistence();
-        createAppointment ca = new createAppointment();
+        createAppointment caView = new createAppointment();
 
-        Schedule sc = new Schedule(fp, ca);
+        Schedule sc = new Schedule(fp, caView);
+
+
 
     }
 }
