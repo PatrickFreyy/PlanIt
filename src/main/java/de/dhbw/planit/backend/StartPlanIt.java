@@ -16,6 +16,7 @@ public final class StartPlanIt {
         createAppointment caView = new createAppointment();
 
         Schedule sc = new Schedule(fp, caView);
+        sc.startCA();
 
 
 

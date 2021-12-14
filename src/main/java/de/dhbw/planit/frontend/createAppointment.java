@@ -34,7 +34,7 @@ public class createAppointment extends JFrame implements UIView{
 	@SuppressWarnings("unchecked")
 	public createAppointment() {
 		// structure of the frame
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		// this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setTitle("Create Event");
 		this.setSize(300, 300);
 		this.setLayout(new BorderLayout());
@@ -61,6 +61,12 @@ public class createAppointment extends JFrame implements UIView{
 		this.right.add(createbtn);
 		this.structure.add(this.right);
 		this.add(structure, BorderLayout.CENTER);
+		// this.setVisible(true);
+	}
+
+	@Override
+	public void showView(){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 	}
 

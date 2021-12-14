@@ -2,13 +2,14 @@ package src.main.java.de.dhbw.planit.backend;
 
 import java.sql.Date;
 import src.main.java.de.dhbw.planit.frontend.Event;
-import src.main.java.de.dhbw.planit.backend.Category;
-import src.main.java.de.dhbw.planit.backend.Color;
+// import src.main.java.de.dhbw.planit.backend.Category;
+// import src.main.java.de.dhbw.planit.backend.Color;
 
 public class Schedule {
     Persistence persitence;
     Appointment[] appointments;
     UIView view;
+    int app_ID_gen;
 
     public Schedule (Persistence persistence, UIView view){
         this.persitence = persistence;
@@ -16,21 +17,23 @@ public class Schedule {
     }
 
 
-    private void startCA(){
+    public void startCA(){
         view.declareEvent(new Event() {
             @Override
             public void createEvent(String[] strings){
                 int app_ID;
                 String description = strings[0];
-                Category category;
+                // Category category;
                 int priority = 1;
-                Color color;
-                Date startDate;
-                Date endDate;
-                createAppointment(app_ID, description, category, priority, color, startDate, endDate);
+                // Color color;
+                Date startDate = Date.valueOf(strings[1]);
+                Date endDate = Date.valueOf(strings[3]);
+                app_ID = app_ID_gen++;
+                createAppointment(app_ID, description, null, priority, null, startDate, endDate);
                 
             }
         });
+    view.showView();
     }
 
     void createAppointment(int app_ID, String description, Category category, int priority,
