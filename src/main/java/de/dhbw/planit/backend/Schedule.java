@@ -30,6 +30,7 @@ public class Schedule {
                 Date endDate = Date.valueOf(strings[3]);
                 app_ID = app_ID_gen++;
                 createAppointment(app_ID, description, null, priority, null, startDate, endDate);
+                view.closeView();
                 
             }
         });

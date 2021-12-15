@@ -70,6 +70,11 @@ public class createAppointment extends JFrame implements UIView{
 		this.setVisible(true);
 	}
 
+	@Override
+	public void closeView(){
+		this.setVisible(false);
+	}
+
 	public static void main(String[] args) {
 		new createAppointment();
 
