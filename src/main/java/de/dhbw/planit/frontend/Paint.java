@@ -21,7 +21,7 @@ public class Paint extends JComponent {
 
 //		g.fillRect(0, 10, 30, 30);
 		g.setColor(Color.BLACK);
-		g.fillRect(x, getStart(), WeekOverview.uhrzeitenPanel.getWidth(), time);
+		g.fillRect(x, getStart(), WeekOverview.panelUhrzeit.getWidth(), time);
 	}
 
 	private int getStart() {

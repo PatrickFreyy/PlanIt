@@ -1,22 +1,25 @@
 package Scheduler;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.swing.JComponent;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 
-public class WeekOverview extends JComponent {
+public class WeekOverview {
 	String description;
 	// Category category;
 	int priority; // data not final
@@ -25,8 +28,8 @@ public class WeekOverview extends JComponent {
 	Date endDate = new Date();
 
 	// Panel Tage erstellen
-	static JPanel uhrzeitenPanel = new JPanel();
-	JPanel montagPanel = new JPanel();
+	static JPanel panelUhrzeit = new JPanel();
+	JPanel panelMontag = new JPanel();
 	JPanel dienstagPanel = new JPanel();
 	JPanel mittwochPanel = new JPanel();
 	JPanel donnerstagPanel = new JPanel();
@@ -85,83 +88,123 @@ public class WeekOverview extends JComponent {
 
 		// ------------------------
 
-		JPanel terminPanel = new JPanel();
-		terminPanel.setBorder(new LineBorder(SystemColor.desktop));
-		terminPanel.setBounds(10, 176, 1509, 442);
-		frame.getContentPane().add(terminPanel);
-		terminPanel.setLayout(new GridLayout(1, 8, 0, 0));
+		JPanel panelTerminsicht = new JPanel();
+		panelTerminsicht.setBorder(new LineBorder(SystemColor.desktop));
+		panelTerminsicht.setBounds(10, 176, 1509, 442);
+		frame.getContentPane().add(panelTerminsicht);
+		panelTerminsicht.setLayout(new GridLayout(1, 8, 0, 0));
 
-		uhrzeitenPanel.setBackground(Color.LIGHT_GRAY);
-		uhrzeitenPanel.setBorder(new LineBorder(SystemColor.desktop));
-		terminPanel.add(uhrzeitenPanel);
+		panelUhrzeit.setBackground(Color.LIGHT_GRAY);
+		panelUhrzeit.setBorder(new LineBorder(SystemColor.desktop));
+		panelTerminsicht.add(panelUhrzeit);
 
-		montagPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(montagPanel);
+		panelMontag.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelTerminsicht.add(panelMontag);
 
 		dienstagPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(dienstagPanel);
+		panelTerminsicht.add(dienstagPanel);
 
 		mittwochPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(mittwochPanel);
+		panelTerminsicht.add(mittwochPanel);
 
 		donnerstagPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(donnerstagPanel);
+		panelTerminsicht.add(donnerstagPanel);
 
 		freitagPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(freitagPanel);
+		panelTerminsicht.add(freitagPanel);
 
 		samstagPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(samstagPanel);
+		panelTerminsicht.add(samstagPanel);
 
 		sonntagPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		terminPanel.add(sonntagPanel);
+		panelTerminsicht.add(sonntagPanel);
 
 		// -------------------
 
-		JPanel datumsleiste = new JPanel();
-		datumsleiste.setBackground(Color.LIGHT_GRAY);
-		datumsleiste.setBorder(new LineBorder(Color.BLACK));
-		datumsleiste.setBounds(10, 124, 1509, 54);
-		frame.getContentPane().add(datumsleiste);
-		datumsleiste.setLayout(new GridLayout(1, 8, 0, 0));
+		JPanel panelTage = new JPanel();
+		panelTage.setBackground(Color.LIGHT_GRAY);
+		panelTage.setBorder(new LineBorder(Color.BLACK));
+		panelTage.setBounds(10, 124, 1509, 54);
+		frame.getContentPane().add(panelTage);
+		panelTage.setLayout(new GridLayout(1, 8, 0, 0));
 
 		JLabel Kalenderwoche = new JLabel("");
-		datumsleiste.add(Kalenderwoche);
+		Kalenderwoche.setBackground(new Color(255, 160, 122));
+		panelTage.add(Kalenderwoche);
 
 		JLabel montagHeader = new JLabel("Montag");
 		montagHeader.setHorizontalAlignment(SwingConstants.CENTER);
 		montagHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
-		datumsleiste.add(montagHeader);
+		panelTage.add(montagHeader);
 
 		JLabel dienstagHeader = new JLabel("Dienstag");
 		dienstagHeader.setHorizontalAlignment(SwingConstants.CENTER);
 		dienstagHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
-		datumsleiste.add(dienstagHeader);
+		panelTage.add(dienstagHeader);
 
 		JLabel mittwochHeader = new JLabel("Mittwoch");
 		mittwochHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		mittwochHeader.setHorizontalAlignment(SwingConstants.CENTER);
-		datumsleiste.add(mittwochHeader);
+		panelTage.add(mittwochHeader);
 
 		JLabel donnerstagHeader = new JLabel("Donnerstag");
 		donnerstagHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		donnerstagHeader.setHorizontalAlignment(SwingConstants.CENTER);
-		datumsleiste.add(donnerstagHeader);
+		panelTage.add(donnerstagHeader);
 
 		JLabel freitagHeader = new JLabel("Freitag");
 		freitagHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		freitagHeader.setHorizontalAlignment(SwingConstants.CENTER);
-		datumsleiste.add(freitagHeader);
+		panelTage.add(freitagHeader);
 
 		JLabel samstagHeader = new JLabel("Samstag");
 		samstagHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		samstagHeader.setHorizontalAlignment(SwingConstants.CENTER);
-		datumsleiste.add(samstagHeader);
+		panelTage.add(samstagHeader);
 
 		JLabel sonntagHeader = new JLabel("Sonntag");
 		sonntagHeader.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		sonntagHeader.setHorizontalAlignment(SwingConstants.CENTER);
-		datumsleiste.add(sonntagHeader);
+		panelTage.add(sonntagHeader);
+
+		JPanel panelHeader = new JPanel();
+		panelHeader.setBounds(10, 11, 1509, 48);
+		frame.getContentPane().add(panelHeader);
+		panelHeader.setLayout(new BorderLayout(0, 0));
+
+		JButton buttonCreateAppointment = new JButton("Erstelle neuen Termin");
+		buttonCreateAppointment.setBackground(new Color(30, 144, 255));
+		buttonCreateAppointment.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		buttonCreateAppointment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		panelHeader.add(buttonCreateAppointment, BorderLayout.EAST);
+
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(255, 160, 122));
+		panel_1.setBounds(10, 76, 1509, 48);
+		frame.getContentPane().add(panel_1);
+		panel_1.setLayout(new BorderLayout(0, 0));
+
+		JButton buttonLetzteWoche = new JButton("<-  Letzte Woche");
+		buttonLetzteWoche.setBackground(new Color(30, 144, 255));
+		buttonLetzteWoche.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		buttonLetzteWoche.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		panel_1.add(buttonLetzteWoche, BorderLayout.WEST);
+
+		JLabel labelDatumWoche = new JLabel("Datum:");
+		labelDatumWoche.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		labelDatumWoche.setHorizontalAlignment(SwingConstants.CENTER);
+		panel_1.add(labelDatumWoche, BorderLayout.CENTER);
+
+		JButton buttonNaechsteWoche = new JButton("N\u00E4chste Woche  ->");
+		buttonNaechsteWoche.setBackground(new Color(30, 144, 255));
+		buttonNaechsteWoche.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		panel_1.add(buttonNaechsteWoche, BorderLayout.EAST);
 
 		iniziateAppointments();
 	}
@@ -172,7 +215,7 @@ public class WeekOverview extends JComponent {
 			System.out.println(getDayOfTheWeek());
 			switch (getDayOfTheWeek()) {
 			case "Montag": {
-				montagPanel.add(new Paint());
+				panelMontag.add(new Paint());
 			}
 			case "Dienstag": {
 				dienstagPanel.add(new Paint());
