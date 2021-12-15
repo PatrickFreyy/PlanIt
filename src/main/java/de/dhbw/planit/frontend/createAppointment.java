@@ -26,7 +26,7 @@ public class createAppointment extends JFrame implements UIView{
 	private JPanel right = new JPanel();
 	private JCheckBox flexible = new JCheckBox("flexible?");
 	private JButton createbtn = new JButton("create");
-	private Event event;
+	private Event events;
 
 	// to save the textfields
 	private Map textfields = new HashMap<Integer, JTextField>();
@@ -129,8 +129,8 @@ public class createAppointment extends JFrame implements UIView{
  	}
 
 	@Override
-	public void declareEvent(Event event){
-		this.event = event;
-		this.createbtn.addActionListener(action -> event.createEvent(getStrings()));
+	public void declareEvent(Event events){
+		this.events = events;
+		this.createbtn.addActionListener(action -> events.createEvent(getStrings()));
 	}
 }
