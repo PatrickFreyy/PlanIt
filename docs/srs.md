@@ -32,7 +32,7 @@ This Software Requirements Specification (SRS) describes all specifications for 
 
 
 ### 1.2 Scope
-The project is going to be realized as a web-application, data will be stored locally.
+The project is going to be realized as a local-application, data will be stored locally.
 
 There will be no different categories of users.
  
@@ -67,7 +67,7 @@ The following chapter provides an overview of this project with vision and Overa
 PlanIt will be a tool like a calendar. The main difference between our project and other usual calendar will be an exam planer. Not only will users set up new appointments and have a plan for the day, but they will also be able to plan their exam preparation. By entering the date and number and length of lectures, PlanIt suggests a time schedule for the exam preparation.
 
 ### 2.2 Use Case Diagram
-![OUCD](./UseCaseDiagram.png) 
+![OUCD]
 
 ### 2.3 Technology Stack
 Technologies we use:

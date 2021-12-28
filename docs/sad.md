@@ -38,7 +38,7 @@ implementation and data views.
 
 ## 2. Architectural Representation
 
-Our project PlanIt uses the model-view-controler(MVC) structure as follows:
+Our project PlanIt uses the model-view-controler (MVC) structure as follows:
 
 ![QUDC] 
 
