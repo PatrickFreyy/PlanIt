@@ -8,7 +8,7 @@ The user gets an overview of his schedule when starting the application.
 ### 2.1 Basic Flow
 
   1. User starts application
-  2. Clients gets appointments from the local storage and displays them
+  2. Client gets appointments from the local storage and displays them
   3. User views schedule and can scroll through time table
   
 #### 2.1.1 Activity Diagram
