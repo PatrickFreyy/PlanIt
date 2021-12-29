@@ -74,7 +74,7 @@ Technologies we use:
 
 Backend: Java
 
-Frontend: JavaScript [Framework missing]
+Frontend: at the moment Java, the plan is to use JavaScript [Framework missing]
 
 IDE: Visual Studio Code
 
@@ -106,15 +106,15 @@ Until June, we want to implement:
 
 ### 3.2 Usability
 #### 3.2.1 Intuitive User Guidance
-We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the web-app. 
+We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the application. 
 
 #### 3.2.2 FAQ
-We implement a FAQ to help the user on using the web-application.
+We implement a FAQ to help the user on using the application.
 
 ### 3.3 Reliability
 
 #### 3.3.1 Server Availability
-The website servers should always be available so the user has always access to his schedule.
+The website servers (in the future) should always be available so the user has always access to his schedule.
 
 ### 3.4 Perfomance
 Due to small size of the application, we don't focus on performance.
@@ -135,7 +135,7 @@ We don't have any purchased components yet. If there will be purchased component
 ### 3.9 Interfaces
 
 #### 3.9.1 User Interfaces
-The users could enter their appointments on a schedule, which is shown on the web-application.
+The users could enter their appointments on a schedule, which is shown on the application.
 
 #### 3.9.2 Persitence Interfaces
 Controller parses data to persistence interface where the user could make their input. 
