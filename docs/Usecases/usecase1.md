@@ -15,7 +15,7 @@ The user gets an overview of his schedule when starting the application.
 
 ![OUCD] 
 
-And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase1.feature):
+And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase1.feature):
 
 ```feature 
 Feature: Start PlanIt
@@ -66,6 +66,6 @@ While using the application the user created at least one event. The storage con
 * changing views
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1_1.png
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/view.png
-[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/feature1.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/usecase1_1.png
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/view.png
+[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Features/feature1.png
