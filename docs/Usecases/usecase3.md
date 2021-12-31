@@ -15,7 +15,7 @@ The user can delete an existing appointment.
   
 #### 2.1.1 Activity Diagram
 
-![OUCD] 
+<!--![OUCD] -->
 
 And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase1.feature):
 
@@ -39,7 +39,7 @@ Feature: Start PlanIt
 
 #### 2.1.2 Mock-up 
 
-![OUCA]
+<!-- ![OUCA] -->
 
 ### 2.2 Alternative Flows
   1. Appointment will not be deleted if user clicks on cancel button in confirm view.
