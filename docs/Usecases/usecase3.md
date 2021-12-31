@@ -17,7 +17,7 @@ The user can delete an existing appointment.
 
 <!--![OUCD] -->
 
-And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase1.feature):
+And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase1.feature):
 
 ```feature 
 Feature: Start PlanIt
@@ -37,7 +37,7 @@ Feature: Start PlanIt
 ```
 <!-- ![OUCB] -->
 
-#### 2.1.2 Mock-up 
+<!-- #### 2.1.2 Mock-up --> 
 
 <!-- ![OUCA] -->
 
