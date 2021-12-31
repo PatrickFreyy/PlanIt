@@ -18,28 +18,20 @@ The user gets an overview of his schedule when starting the application.
 And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase1.feature):
 
 ```feature 
-Feature: Start
+Feature: Start PlanIt
 
     As a User
     I want to see an overview of my schedule when starting the application.
 
-    Scenario: User has no network connection
-        Given I have no network connection
-        When I start the application
-        Then I can not load the page 
-        And I get an error message
-
-    Scenario: User has saved appointments in storage
+    Scenario: Saved appointments in storage
         Given I have saved appointments in local storage
-        And I have a network connection
         When I start the application
-        Then I see should see all saved appointments in the application
+        Then I see a calender view with my saved appointments
 
-    Scenario: no appointments in local storage
+    Scenario: No appointments in local storage
         Given I have no saved appointments in local storage
-        And I have a network connection
         When I start the application 
-        Then I see the application with an empty schedule
+        Then I see a calendar view without appointments
 ```
 <!-- ![OUCB] -->
 
