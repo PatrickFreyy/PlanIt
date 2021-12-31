@@ -1,4 +1,4 @@
-package Scheduler;
+package src.main.java.de.dhbw.planit.frontend;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
