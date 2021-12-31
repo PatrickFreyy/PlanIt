@@ -17,7 +17,7 @@ The user can create an event by using the UI.
 
 ![OUCD] 
 
-And here is the code of the  `.feature` file for this use case  and by clicking ["Create event-creation window"](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase2.feature) could be read the actual one for this use case. To see the the code for the usecase "Save new appointment" click [here](https://github.com/PatrickFreyy/PlanIt/blob/main/backend/src/tests/usecase3.feature): 
+And here is the code of the  `.feature` file for this use case  and by clicking ["Create event-creation window"](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase2.feature) could be read the actual one for this usecase. To see the the code for the usecase "Save new appointment" click [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase3.feature): 
 
 ```feature 
 Feature: Create event-creation window
@@ -103,6 +103,6 @@ The user can choose what kind of event he created. For example, whether it is a 
 If an event doesn’t get cancelled, but set to another time, one option is to delete the old event and create a new one. To simplify this process, it is possible to change an existing object.
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase2.drawio.png 
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/create.png
-[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/feature2.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/usecase2.drawio.png 
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/create.png
+[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Features/feature2.png
