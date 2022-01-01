@@ -20,20 +20,24 @@ The user can delete an existing appointment.
 And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase1.feature):
 
 ```feature 
-Feature: Start PlanIt
+Feature: Starting PlanIt
 
     As a User
-    I want to see an overview of my schedule when starting the application.
+    I click on the delete button in the appointment view
 
-    Scenario: Saved appointments in storage
-        Given I have saved appointments in local storage
-        When I start the application
-        Then I see a calender view with my saved appointments
+    Scenario: I want to delete the selected appointment
+        Given I have selected an existing appointment
+        And I clicked the delete button
+        When I click confirm
+        Then the appointment is deleted from the storage
+        And I see an updated calendar view
 
-    Scenario: No appointments in local storage
-        Given I have no saved appointments in local storage
-        When I start the application 
-        Then I see a calendar view without appointments
+    Scenario: I don't want to delete the selected appointment
+        Given I have selected an existing appointment
+        And I clicked the delete button
+        When I click cancel
+        Then the appointment won't be deleted from the storage
+        And I see the calendar view
 ```
 <!-- ![OUCB] -->
 
