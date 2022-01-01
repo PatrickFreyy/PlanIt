@@ -14,4 +14,5 @@ Feature: Starting PlanIt
         Given I have selected an existing appointment
         And I clicked the delete button
         When I click cancel
-        Then the appointment won't be deleted from the storage.
+        Then the appointment won't be deleted from the storage
+        And I see the calendar view.
