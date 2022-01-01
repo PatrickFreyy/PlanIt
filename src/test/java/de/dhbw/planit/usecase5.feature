@@ -1,4 +1,4 @@
-Feature: Starting PlanIt
+Feature: Delete appointment
 
     As a User
     I click on the delete button in the appointment view.
