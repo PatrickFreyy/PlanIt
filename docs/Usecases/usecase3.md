@@ -20,7 +20,7 @@ The user can delete an existing appointment.
 And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase1.feature):
 
 ```feature 
-Feature: Starting PlanIt
+Feature: Delete Appointment
 
     As a User
     I click on the delete button in the appointment view
