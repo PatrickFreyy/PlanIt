@@ -77,4 +77,4 @@ If an event doesn’t get cancelled, but set to another time or someting other c
 
 <!-- Picture-Link definitions: -->
 [OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/wireframe-createEvent.png
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/feature4_1.png 
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/uc4-ActivityDiagram.png

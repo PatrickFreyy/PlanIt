@@ -102,5 +102,5 @@ The user can choose what kind of event he created. For example, whether it is a 
 If an event doesn’t get cancelled, but set to another time, one option is to delete the old event and create a new one. To simplify this process, it is possible to change an existing object.
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/uc2-ActivityDiagram.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/uc2-AchtivityDiagram.png
 [OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/wireframe-createEvent.png
