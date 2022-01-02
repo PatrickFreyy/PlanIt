@@ -6,7 +6,7 @@ Feature: Create event-creation window
     Scenario: Creation succesful
         Given I started the application
         When I press the button to create an event
-        Then I see a window which allows me to create an appointment
+        Then I see a window which allows me to create an event
     
     Scenario: Creation not succesful
         Given I started the application

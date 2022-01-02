@@ -20,7 +20,7 @@ public class usecase1 implements En {
 			return true;
 		});
 		
-		@Given(/^I have saved appointments in local storage$/, () => {
+		@Given(/^I have saved events in local storage$/, () => {
 			return true;
 		});
 		
@@ -32,11 +32,11 @@ public class usecase1 implements En {
 			return true;
 		});
 		
-		Then(/^I see should see all saved appointments in the application$/, () => {
+		Then(/^I see should see all saved events in the application$/, () => {
 			return true;
 		});
 		
-		@Given(/^I have no saved appointments in local storage$/, () => {
+		@Given(/^I have no saved events in local storage$/, () => {
 			return true;
 		});
 		

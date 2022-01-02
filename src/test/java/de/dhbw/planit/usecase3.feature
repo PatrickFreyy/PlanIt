@@ -1,7 +1,7 @@
- Feature: Save new appointment
+ Feature: Save new event
  
      As a User
-     I want to save my created appointment.
+     I want to save my created event.
 
      Background: 
         Given I started the application
