@@ -33,7 +33,7 @@ Feature: set category
     When I choose a category and create the event
     Then I see the event in the color of the category      
 ```
-![OUCB]
+<!--![OUCB]-->
 
 #### 2.1.2 Mock-up 
 
