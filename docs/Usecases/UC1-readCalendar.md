@@ -8,14 +8,14 @@ The user gets an overview of his schedule when starting the application.
 ### 2.1 Basic Flow
 
   1. User starts application
-  2. Client gets appointments from the local storage and displays them
+  2. Client gets events from the local storage and displays them
   3. User views schedule and can scroll through time table
   
 #### 2.1.1 Activity Diagram
 
 ![OUCD] 
 
-And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase1.feature):
+The code for the feature file looks like this:
 
 ```feature 
 Feature: Start PlanIt
@@ -33,7 +33,6 @@ Feature: Start PlanIt
         When I start the application 
         Then I see a calendar view without appointments
 ```
-<!-- ![OUCB] -->
 
 #### 2.1.2 Mock-up 
 
@@ -66,6 +65,5 @@ While using the application the user created at least one event. The storage con
 * changing views
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/usecase1_1.png
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/view.png
-[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Features/feature1.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/uc1-ActivityDiagram-png
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/wireframe-dayview.png

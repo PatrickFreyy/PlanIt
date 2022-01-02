@@ -17,7 +17,7 @@ The user can create an event by using the UI.
 
 ![OUCD] 
 
-And here is the code of the  `.feature` file for this use case  and by clicking ["Create event-creation window"](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase2.feature) could be read the actual one for this usecase. To see the the code for the usecase "Save new appointment" click [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase3.feature): 
+As for the creation of a new event a window has to be created before saving anything in storage, there are two seperate feature files. One for creating the event-creation window and one for 
 
 ```feature 
 Feature: Create event-creation window
@@ -37,10 +37,10 @@ Feature: Create event-creation window
         Then I get an error message 
         And I see my schedule
 
- Feature: Save new appointment
+ Feature: Save new event
  
      As a User
-     I want to save my created appointment.
+     I want to save my created event.
 
      Background: 
         Given I started the application
@@ -58,16 +58,15 @@ Feature: Create event-creation window
         Then I will get an error-message
         And I will see the event-creation window        
 ```
-<!-- ![OUCB] -->
 
 #### 2.1.2 Mock-up 
 
 ![OUCA]
 
-The checkbox "flexible" is for the feature that the application searchs for time to learn for exams. If the appointment is flexible, the application maybe moves it to an other time to insert time to learn.
+The checkbox "flexible" is for the feature that the application searchs for time to learn for exams. If the event is flexible, the application maybe moves it to an other time to insert time to learn.
 ### 2.2 Alternative Flows
   
-The user gets a warning, that he has to fill all fields. The client don't saves the appointment.
+The user gets a warning, that he has to fill all fields. The client don't saves the event.
 
 ## 3 Special Requirements
 
@@ -95,7 +94,7 @@ After an event has been created, it is necessary, that it can be deleted again, 
 
 ### 6.2 Set Category
 
-The user can choose what kind of event he created. For example, whether it is a private, like a doctors appointment, or is it work related, like a business meeting. The categories are predefined.
+The user can choose what kind of event he created. For example, whether it is a private, like a doctors event, or is it work related, like a business meeting. The categories are predefined.
 
 
 ### 6.3 Reschedule Event
@@ -103,6 +102,5 @@ The user can choose what kind of event he created. For example, whether it is a 
 If an event doesn’t get cancelled, but set to another time, one option is to delete the old event and create a new one. To simplify this process, it is possible to change an existing object.
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/usecase2.drawio.png 
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/create.png
-[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Features/feature2.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/uc2-ActivityDiagram.png
+[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/wireframe-createEvent.png

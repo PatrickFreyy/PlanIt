@@ -17,7 +17,7 @@ The user can delete an existing event.
 
 <!--![OUCD] -->
 
-And here is the code of the  `.feature` file for this use case the actual one could be read [here](https://github.com/PatrickFreyy/PlanIt/blob/main/src/test/java/de/dhbw/planit/usecase5.feature):
+Here is the code of the code of the feature file belonging to this use case:
 
 ```feature 
 Feature: Delete Event
@@ -39,11 +39,6 @@ Feature: Delete Event
         Then the event won't be deleted from the storage
         And I see the calendar view
 ```
-<!-- ![OUCB] -->
-
-<!-- #### 2.1.2 Mock-up --> 
-
-<!-- ![OUCA] -->
 
 ### 2.2 Alternative Flows
   1. Event will not be deleted if user clicks on cancel button in confirm view.
@@ -67,6 +62,4 @@ There has to be an event in the storage which can be deleted.
 (n/a)
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/usecase1_1.png
-[OUCA]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/view.png
-[OUCB]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/feature1.png
+[OUCD]: https://github.com/PatrickFreyy/PlanIt/blob/main/docs/Usecases/uc4-ActivityDiagram.png
